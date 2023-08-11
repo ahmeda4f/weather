@@ -1,0 +1,102 @@
+.inputs{
+    color: white !important;
+    border-color: grey !important;
+   
+   
+   }
+   ::placeholder {
+    color: grey !important;
+    opacity: 1;
+    font-weight: 200;
+
+  }
+.inputs:hover{
+    border-color: aqua!important;
+}
+#bbbs{
+    border-radius: 100vh !important;
+    transition: .5s ease;
+    width: fit-content;
+    background-color: rgb(48, 122, 122) !important;
+    border: none !important;
+    
+  }
+  #bbbs:hover{
+    background-color: blueviolet;
+  }
+  .inputs2{
+    background-color:rgba(20,32,40,235)  !important; 
+    color: white !important;
+   
+   
+   }
+   
+.icons-list {
+    list-style: none; /* Remove default list-style */
+    margin-bottom: 0; /* Remove the default margin-bottom from the ul element */
+  }
+  
+  .icons-list li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(20,32,40,235);
+    border-radius: 50%;
+    transition: .5s ease;
+  }
+  
+  .icons-list li:hover {
+   
+    color: dodgerblue !important;
+    background-color: blue!important ;
+  }
+  /* footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+} */
+
+.bgcolor{
+    background-color: rgba(20,32,40,235)!important ; 
+}
+.anc{
+    position: relative;
+    text-decoration: none;
+  }
+  .anc:after{
+    content: "";
+    position: absolute;
+    background-color:dodgerblue;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    transition: 0.3s ease;
+  }
+  
+  .anc:hover:after{
+    width: 100%;
+  }
+  .anc:hover:after,
+  .section:target .anc:after {
+    width: 100%;
+  }
+   .anc:hover{
+    color: dodgerblue !important;
+    transition: .5s;
+   }
+   .navbar-nav .active a {
+    color: #1e90ff !important;
+}
+
+
+
+
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather task</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-dark">
+
+    <nav class="navbar navbar-expand-lg inputs  "id="#navbar-example">
+        <div class="container  my-4 p-2 me-auto"  >
+            <i class="fa-solid fa-cloud fs-1 text-info"></i>
+          <a class="navbar-brand text-white ms-2 fs-5 mb-2   " href="#">Weather</a>
+
+          <button class="navbar-toggler "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-secondary"></i>     
+             </button>
+          <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+              <li class="nav-item mt-2 active anc">
+                <a class="nav-link  me-4 text-white anc  " id="anchor" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link me-4 text-white  anc"id="anchor" href="#">News</a>
+              </li>  
+              <li class="nav-item mt-2">
+                <a class="nav-link me-4 anc text-white "id="anchor" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link me-4  anc text-white "id="anchor" href="#">Photos</a>
+              </li>  
+              <li class="nav-item mt-2">
+                <a class="nav-link me-4  anc text-white "id="anchor" href="contact.html">Contact</a>
+              </li>  
+            </ul>  
+          </div> 
+        </div>
+        
+      </nav> 
+      <div class="containers w-100 ">
+        <div class="input-container m-4 pt-5 justify-content-center ">
+            <div class="d-flex justify-content-center"> 
+                <input type="search" class="form-control my-4 rounded-5 inputs p-3 w-50" name="searcher" id="searcher" placeholder="Find your location..">
+                <!-- <button class="btn btn-primary btn-sm me-0  rounded-5" id="searchButton"> Search</button> -->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row g-0 ">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white d-none" id="showcard">
+                        <div class="card-body">
+                      <!-- Include your h5 elements with specified IDs -->
+<h5 class="card-title fs-6 fw-light ady" id="date"></h5>
+
+                          <h4 class="fw-lighter fs-5 my-4" id="showname"></h4>
+                          <div class="weather-icon"><img src="" id="imgs" /></div>
+
+                           <div id="show">
+                            <!-- <img src="${ data.current.condition.icon}" alt=""> -->
+                                            
+                        </div>
+                        
+                          <div class="conatiner d-none" id="iconsweather">
+
+                          <i class="fa-solid fa-umbrella ady fs-5 mx-2 "></i><small class="me-3">20%</small>
+                          <i class="fa-solid fa-wind ady fs-5 mx-2"></i> <small class="me-3">18km/h</small>
+                          <i class="fa-solid fa-compass ady fs-5 mx-2"></i> <small class="me-3">East</small>
+                        </div>
+                    </div>
+
+                      </div>
+                  
+                </div>
+                <div class="col-md-4">
+                    <div class="card second text-white d-none "id="secondcard">
+                        <div class="card-body  ">
+                            <h5 class="card-title ady text-center  fw-lighter fs-6 my-2" id="day2"></h5>
+                            <div class="contianer text-center py-5">
+
+                              <div class="second-icon my-2"><img src="" id="secondimg" /></div>
+                              <h5 id="tempsecond"> </h5>
+                            <h6 class="fw-light p-1 my-3" id="min2"> </h6>
+                            <p class="card-text py-1 text-info  fw-light fs-6" id="weatherpar"></p>
+
+
+                            <div class="conatiner  d-none  ">
+
+                                <i class="fa-solid fa-umbrella ady fs-5 mx-2 "></i><small class="me-3">20%</small>
+                                <i class="fa-solid fa-wind ady fs-5 mx-2"></i> <small class="me-3">18km/h</small>
+                                <i class="fa-solid fa-compass ady fs-5 mx-2"></i> <small class="me-3">East</small>
+                              </div>
+
+                        </div>
+
+                        </div>
+                      </div>
+                  
+                </div>
+                <div class="col-md-4">
+                  <div class="card second text-white d-none "id="thirdcard">
+                      <div class="card-body  ">
+                          <h5 class="card-title ady text-center  fw-lighter fs-6 my-2" id="day3"></h5>
+                          <div class="contianer text-center py-5">
+
+                            <div class="second-icon my-2"><img src="" id="thirdimg" /></div>
+                            <h5 id="tempthird"> </h5>
+                          <h6 class="fw-light p-1 my-3" id="min3"> </h6>
+                          <p class="card-text py-1 text-info  fw-light fs-6" id="weatherpar3"></p>
+
+
+                          <div class="conatiner  d-none  ">
+
+                              <i class="fa-solid fa-umbrella ady fs-5 mx-2 "></i><small class="me-3">20%</small>
+                              <i class="fa-solid fa-wind ady fs-5 mx-2"></i> <small class="me-3">18km/h</small>
+                              <i class="fa-solid fa-compass ady fs-5 mx-2"></i> <small class="me-3">East</small>
+                            </div>
+
+                      </div>
+
+                      </div>
+                    </div>
+                
+              </div>
+    </div>
+            </div>
+      </div>
+      <div class="footer my-3">
+        <div class="container d-flex align-items-center justify-content-around">
+            <input type="search" class="form-control my-4 rounded-5 inputs2 p-3 w-50" name="searcher" id="searcher" placeholder="Enter your email to subscribe"> 
+            <ul class="icons-list list-unstyled gap-4 d-flex ">
+                <li><i class="fa-brands fa-facebook icons text-info"></i></li>
+                <li><i class="fa-brands fa-twitter icons text-info"></i></li>
+                <li><i class="fa-brands fa-youtube icons text-info"></i></li>
+                <li><i class="fa-brands fa-instagram icons text-info"></i></li>
+            </ul>
+        </div>
+
+
+        <p class="text-white fs-6 fw-light text-center my-3 ady">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+    
+      
+      
+      
+
+          
+
+
+
+
+
+
+
+
+
+        <!-- <div class="row">
+            <div class="col-md-4">
+                <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Dark card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Dark card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+      -->
+          <!-- <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Dark card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          
+          <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Dark card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div> -->
+    
+    
+
+
+
+
+    <script src="main.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

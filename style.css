@@ -1,0 +1,146 @@
+.anc{
+    position: relative;
+    text-decoration: none;
+  }
+  .anc:after{
+    content: "";
+    position: absolute;
+    background-color:dodgerblue;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    transition: 0.3s ease;
+  }
+  /* Responsive styles for the button */
+.btn {
+  padding: 8px 20px; /* Adjust padding to make it visually appealing */
+  font-size: 14px; /* Use responsive font size */
+}
+
+/* Apply different styles for small screens using media query */
+@media (max-width: 768px) {
+  .btn {
+    font-size: 12px; /* Reduce font size for smaller screens */
+    padding: 6px 15px; /* Adjust padding for smaller screens */
+  }
+}
+@media (max-width: 481px) {
+  .btn {
+    font-size: 10px; /* Reduce font size for smaller screens */
+    padding: 2px 8px; /* Adjust padding for smaller screens */
+  }
+}
+
+  .anc:hover:after{
+    width: 100%;
+  }
+  .anc:hover:after,
+  .section:target .anc:after {
+    width: 100%;
+  }
+   .anc:hover{
+    color: dodgerblue !important;
+    transition: .5s;
+   }
+
+
+.input-container {
+  position: relative;
+}
+
+.input-container button {
+  position: absolute;
+  top: 80%;
+  left: 800px;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+.inputs{
+ background-color: rgba(30,32,43,255) !important; 
+ color: white !important;
+
+
+}
+
+.form-control:focus {
+    border: none !important;
+    box-shadow: none !important;
+} 
+.form-control {
+    border: none !important;
+    box-shadow: none !important;
+} 
+::placeholder {
+    color: grey !important;
+    opacity: 1;
+    font-weight: 200;
+
+  }
+
+  .containers {
+    height: 80vh;
+    background-image: linear-gradient(#0008, #0008), url("marcin-nowak-iXqTqC-f6jI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+}
+.ady{
+    color: grey !important
+    ;
+}
+.second{
+    background-color: rgba(20,32,40,235) !important; 
+
+
+}
+.inputs2{
+    background-color:rgb(37, 4, 30) !important; 
+    color: white !important;
+   
+   
+   }
+  
+ 
+.icons-list {
+    list-style: none; 
+    margin-bottom: 0; 
+  }
+  
+  .icons-list li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(20,32,40,235);
+    border-radius: 50%;
+    transition: .5s ease;
+  }
+  
+  .icons-list li:hover {
+   
+    color: dodgerblue !important;
+    background-color:rgb(45, 26, 63) !important ;
+  }
+  .navbar-nav .active a {
+    color: #1e90ff !important;
+}
+
+
+
+
+
+
+.bbbs{
+  border-radius: 100vh !important;
+  transition: .5s ease;
+  width: fit-content;
+  background-color: rgb(48, 122, 122) !important;
+  border: none !important;
+  
+}
+#date{
+  display: inline-block;
+  word-spacing: 5rem;
+}
